@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: #0e0e0e;
+  color: #f0f0f0;
+  line-height: 1.6;
+}
+
+a {
+  color: #9be7ff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+header h1 {
+  font-size: 3rem;
+  margin-bottom: .5rem;
+}
+header p {
+  font-size: 1.2rem;
+  color: #aaa;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+nav a {
+  font-weight: 500;
+}
+
+section {
+  max-width: 900px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+}
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  border-left: 4px solid #9be7ff;
+  padding-left: .5rem;
+}
+
+.card {
+  background: #181818;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #111;
+  margin-top: 4rem;
+}
+footer p {
+  color: #666;
+}
+
+.socials {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.socials a {
+  font-size: 1.5rem;
+}
+
+/* Subtle animations */
+[data-animate] {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease;
+}
+[data-animate].visible {
+  opacity: 1;
+  transform: translateY(0);
+}
